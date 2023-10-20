@@ -127,7 +127,7 @@ func (r *Runner) Run(c *cli.Context) error {
 	if err != nil {
 		return err
 	}
-	err = os.WriteFile(targetFile, creds, 0755)
+	err = os.WriteFile(targetFile, creds, 0600)
 	if err != nil {
 		return err
 	}
