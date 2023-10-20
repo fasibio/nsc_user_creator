@@ -1,0 +1,14 @@
+account: "local-1"
+name: "user_name"
+allow_pub:
+  - STREAM_NAME.Foo.*.>
+  - $JS.API.STREAM.INFO.STREAM_NAME
+  - $JS.API.STREAM.INFO.BAR
+allow_sub:
+  - BAR.*
+  - STREAM_NAME.Foo.*.>
+allow_sub_over_consumer: 
+  - name: BAR_Consumer_name
+    stream: BAR
+  - name: STREAM_NAME_Consumer_foo
+    stream: STREAM_NAME
