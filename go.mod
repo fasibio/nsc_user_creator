@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/nats-io/jwt v1.2.2
 	github.com/nats-io/nkeys v0.4.5
-	github.com/urfave/cli/v2 v2.25.7
+	github.com/urfave/cli/v2 v2.26.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
